@@ -34,6 +34,10 @@ Route::get('js2', function () {
     return view('js2');
 })->name('js2');
 
-Route::get('bootstrap2', function () {
-    return view('bootstrap2');
-})->name('bootstrap2');
+Route::get('bootstrap1', function () {
+    return view('bootstrap1');
+})->name('bootstrap1');
+
+Route::get('frontend', function () {
+    return view('frontend');
+})->name('frontend');
