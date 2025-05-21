@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.fa-brands {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.card-hover {
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+  }
+
+.card-hover:hover {
+    background-color: black !important;
+    border-color: #9da1a5;
+}
