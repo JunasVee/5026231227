@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat Pagination Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('template')
+@section('content')
+	<h3>Data Pegawai</h3>
+    <br>
+    <br>
+	<a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
 
-	<style type="text/css">
-		.pagination li{
-			float: left;
-			list-style-type: none;
-			margin:5px;
-		}
-	</style>
+	<br/>
+	<br/>
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
 	<h3>Data Pegawai</h3>
 
 
@@ -41,7 +35,4 @@
 
 
 	{{ $pegawai->links() }}
-
-
-</body>
-</html>
+@endsection
