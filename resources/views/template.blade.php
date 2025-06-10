@@ -31,10 +31,10 @@
                 <a class="nav-link" href="#">All Front End</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
+                <a class="nav-link" href="/pegawai2">Pegawai</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tugas CRUD</a>
+                <a class="nav-link" href="/tugascrud">Tugas CRUD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">EAS</a>

@@ -67,6 +67,7 @@ Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 Route::get('/pegawai2', [PegawaiDBController::class, 'index2']);
+Route::get('/tugascrud', [PegawaiDBController::class, 'index3']);
 Route::get('/pegawai/tambah', [PegawaiController::class, 'tambah']);
 Route::post('/pegawai/store', [PegawaiController::class, 'store']);
 Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);

@@ -27,4 +27,14 @@ class PegawaiDBController extends Controller
 
     }
 
+    public function index3()
+    {
+    	// mengambil data dari table pegawai
+    	$penghapus = DB::table('penghapus')->paginate(10);
+
+    	// mengirim data penghapus ke view index
+    	return view('index3',['penghapus' => $penghapus]);
+
+    }
+
 }
