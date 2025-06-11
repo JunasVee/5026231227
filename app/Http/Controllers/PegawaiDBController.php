@@ -37,4 +37,17 @@ class PegawaiDBController extends Controller
 
     }
 
+    public function latihan2()
+    {
+
+        DB::table('pagecounter')->where('ID', 1)->increment('Jumlah');
+
+    	// mengambil data dari table pegawai
+    	$jumlah = DB::table('pagecounter')->where('ID', 1)->value('Jumlah');
+
+    	// mengirim data penghapus ke view index
+    	return view('latihan2',['jumlah' => $jumlah]);
+
+    }
+
 }
