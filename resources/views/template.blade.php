@@ -28,7 +28,7 @@
     <div class="container">
         <ul class="navbar-nav w-100 d-flex justify-content-between">
             <li class="nav-item">
-                <a class="nav-link" href="#">All Front End</a>
+                <a class="nav-link" href="/frontend">All Front End</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/pegawai2">Pegawai</a>
@@ -40,13 +40,13 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/latihan1">Latihan 1</a>
+                <a class="nav-link" href="/latihan1">Latihan 1 (Soal D4)</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/latihan2">Latihan 2 (Soal A1)</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+                <a class="nav-link" href="/karyawan">Latihan 3 (Soal X2)</a>
             </li>
         </ul>
     </div>

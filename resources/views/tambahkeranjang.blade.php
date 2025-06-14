@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Tambah Pegawai</title>
+    <title>Tambah Keranjang</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -13,50 +13,42 @@
 
 <body>
 
-    <h3>Data Pegawai</h3>
+    <h3>Tambah Keranjang Pembelian</h3>
 
-    <a href="/pegawai"> Kembali</a>
+    <a href="/latihan1"> Kembali</a>
 
     <br />
     <br />
 
-    <form action="/pegawai/store" method="post" class="form-horizontal">
+    <form action="/latihan1/store" method="post" class="form-horizontal">
         {{ csrf_field() }}
         <div class="form-group">
-            <label class="control-label col-sm-2" for="nama">
-                Nama
+            <label class="control-label col-sm-2" for="kodebarang">
+                Kode Barang
             </label>
             <div class="col-sm-6">
-                <input class="form-control" type="text" id="nama" name="nama" placeholder="Masukkan nama">
+                <input class="form-control" type="text" id="kodebarang" name="kodebarang" placeholder="kode barang">
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2" for="jabatan">
-                Jabatan
+            <label class="control-label col-sm-2" for="jumlah">
+                Jumlah
             </label>
             <div class="col-sm-6">
-                <input class="form-control" type="text" id="jabatan" name="jabatan" placeholder="Masukkan jabatan">
+                <input class="form-control" type="text" id="jumlah" name="jumlah" placeholder="Masukkan jumlah">
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2" for="umur">
-                Umur
+            <label class="control-label col-sm-2" for="harga">
+                Harga
             </label>
             <div class="col-sm-6">
-                <input class="form-control" type="text" id="umur" name="umur" placeholder="Masukkan umur">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="alamat">
-                Alamat
-            </label>
-            <div class="col-sm-6">
-                <input class="form-control" type="text" id="alamat" name="alamat" placeholder="Masukkan alamat">
+                <input class="form-control" type="text" id="harga" name="harga" placeholder="Masukkan harga">
             </div>
         </div>
         <div class="container">
             <button type="submit" class="btn btn-success">
-                Tambah
+                Masukkan Keranjang
             </button>
         </div>
     </form>

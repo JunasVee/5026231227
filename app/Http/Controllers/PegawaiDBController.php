@@ -20,7 +20,7 @@ class PegawaiDBController extends Controller
     public function index2()
     {
     	// mengambil data dari table pegawai
-    	$pegawai = DB::table('pegawai')->paginate(10);
+    	$pegawai = DB::table('pegawai')->simplePaginate(10);
 
     	// mengirim data pegawai ke view index
     	return view('index2',['pegawai' => $pegawai]);
@@ -34,6 +34,16 @@ class PegawaiDBController extends Controller
 
     	// mengirim data penghapus ke view index
     	return view('index3',['penghapus' => $penghapus]);
+
+    }
+
+    public function latihan1()
+    {
+    	// mengambil data dari table pegawai
+    	$keranjang = DB::table('keranjangbelanja')->simplePaginate(10);
+
+    	// mengirim data pegawai ke view index
+    	return view('latihan1',['keranjang' => $keranjang]);
 
     }
 

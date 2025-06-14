@@ -29,6 +29,11 @@ class PegawaiController extends Controller
         return view('tambah');
     }
 
+    public function tambahkeranjang()
+    {
+        return view('tambahkeranjang');
+    }
+
     public function store(Request $request)
     {
         DB::table('pegawai')->insert([
@@ -38,6 +43,16 @@ class PegawaiController extends Controller
             'pegawai_alamat' => $request->alamat,
         ]);
         return redirect('/pegawai');
+    }
+
+    public function storekeranjang(Request $request)
+    {
+        DB::table('keranjangbelanja')->insert([
+            'KodeBarang' => $request->kodebarang,
+            'Jumlah' => $request->jumlah,
+            'Harga' => $request->harga,
+        ]);
+        return redirect('/latihan1');
     }
 
     public function edit($id)
@@ -62,5 +77,12 @@ class PegawaiController extends Controller
         DB::table('pegawai')->where('pegawai_id', $id)->delete();
 
         return redirect('/pegawai');
+    }
+
+    public function batalkeranjang($id)
+    {
+        DB::table('keranjangbelanja')->where('ID', $id)->delete();
+
+        return redirect('/latihan1');
     }
 }
