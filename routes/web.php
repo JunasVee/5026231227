@@ -8,6 +8,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\NilaiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -93,3 +94,7 @@ Route::post('/karyawan/store',[KaryawanController::class,'store']);
 Route::get('/karyawan/edit/{id}',[KaryawanController::class,'edit']);
 Route::post('/karyawan/update',[KaryawanController::class,'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus']);
+
+Route::get('/eas', [NilaiController::class, 'eas']);
+Route::get('/eas/tambah', [NilaiController::class, 'tambah']);
+Route::post('/eas/store', [NilaiController::class, 'nilaistore']);

@@ -37,7 +37,7 @@
                 <a class="nav-link" href="/tugascrud">Tugas CRUD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+                <a class="nav-link" href="/eas">EAS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/latihan1">Latihan 1 (Soal D4)</a>
